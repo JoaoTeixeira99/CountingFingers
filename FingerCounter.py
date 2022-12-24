@@ -10,7 +10,7 @@ mpDraw = mp.solutions.drawing_utils # draw connections between points in hand
     
 while True:
     success, img = video.read() # Boolean if image is being recorded or not
-    
+    img = cv2.flip(img,1) # mirror img making video normal
     #image recieved in BGR format
     # convert to RGB so it can be processed with mediapipe
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
