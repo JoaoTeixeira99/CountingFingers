@@ -1,2 +1,3 @@
 # FingerCounter
-Using opencv and mediapipe to count fingers
+pip install mediapipe
+pip install opencv-python
