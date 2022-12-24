@@ -1,4 +1,4 @@
 # FingerCounter
-pip install mediapipe /n
-pip install opencv-python /n
+pip install mediapipe <br/>
+pip install opencv-python <br/>
 'q' to quit
