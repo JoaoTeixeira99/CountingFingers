@@ -55,10 +55,4 @@ while True:
         break # If 'q' key is press stop recording
     
 video.release() # Stop using the webcam
-cv2.destroyAllWindows() # Close open windows
-
-
-
-
-
-# Video link: https://www.youtube.com/watch?v=RbqGPFrWZC8    
+cv2.destroyAllWindows() # Close open windows   
