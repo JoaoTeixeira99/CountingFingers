@@ -18,6 +18,7 @@ while True:
     handsPoints = results.multi_hand_landmarks # extract points from hands and its coordinates
     h,w,_ = img.shape # get video img size
     pts = [] # list with points coordinates
+    
     if handsPoints:
         for points in handsPoints:
             #print(points) # print points coordinates
@@ -31,15 +32,16 @@ while True:
 
         fingers = [8, 12, 16, 20] # highest point of all fingers exept thumb 
         counter = 0
+        
         if points:
             if pts[4][0] < pts[17][0]: # if left hand
                 if pts[4][0] < pts[2][0]:
                     counter += 1
-                #print("LEFT")
+                    #print("RIGHT")
             if pts[4][0] > pts[17][0]: # if right hand
                 if pts[4][0] > pts[2][0]:
                     counter += 1
-                #print("RIGHT")    
+                    #print("LEFT")    
                 
             for x in fingers: # for each finger
                 if pts[x][1] < pts[x-2][1]: # if highest point is lower than 3rd point
